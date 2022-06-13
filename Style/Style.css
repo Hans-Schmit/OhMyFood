@@ -11,3 +11,56 @@
 .logo, .menu-h1 {
   font-family: 'Shrikhand', cursive;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.light-grey-bg {
+  background-color: #F7F7F7;
+}
+
+.shadow {
+  -webkit-box-shadow: 2px 2px 30px -10px #CCCCCC;
+          box-shadow: 2px 2px 30px -10px #CCCCCC;
+}
+
+.main-button {
+  color: #FFFFFF;
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
+}
+
+footer {
+  background-color: #444444;
+}
+
+.footer {
+  color: #FFFFFF;
+}
+
+.location {
+  background-color: #EFEFEF;
+  -webkit-box-shadow: 0px 10px 20px -25px inset;
+          box-shadow: 0px 10px 20px -25px inset;
+}
+
+.primary-background-white-text {
+  background-color: #9356DC;
+  color: #FFFFFF;
+}
+
+.funct-icon {
+  color: #777777;
+}
+
+.new {
+  background-color: #99E2D0;
+  color: #2c9c81;
+}
+
+.fa-circle-check {
+  background-color: #99E2D0;
+  color: #FFFFFF;
+}

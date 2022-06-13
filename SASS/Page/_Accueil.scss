@@ -1,0 +1,19 @@
+.location {
+    background-color: $normal-grey;
+    box-shadow: 0px 10px 20px -25px inset;
+}
+
+.primary-background-white-text {
+    background-color: $color-primary;
+    color: #FFFFFF;
+}
+
+.funct-icon {
+    color: $dark-grey;
+}
+
+
+.new {
+    background-color: $color-tertiary;
+    color: darken($color: $color-tertiary, $amount: 35%);
+}
