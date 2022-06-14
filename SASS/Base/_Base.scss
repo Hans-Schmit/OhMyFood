@@ -1,12 +1,3 @@
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-
-$darker-grey: #444444;
-$dark-grey: #777777;
-$normal-grey: #EFEFEF;
-$light-grey: #F7F7F7;
-
 * {
     box-sizing: border-box;
 }
@@ -16,19 +7,7 @@ $light-grey: #F7F7F7;
     font-family: 'Roboto', sans-serif;
 }
 
-.logo, .menu-h1 {
-    font-family: 'Shrikhand', cursive;
-}
-
 a {
     text-decoration: none;
-        color: black;
-}
-
-.light-grey-bg {
-    background-color: $light-grey;
-}
-
-.shadow {
-    box-shadow: 2px 2px 30px -10px #CCCCCC;
+    @include color(black);
 }

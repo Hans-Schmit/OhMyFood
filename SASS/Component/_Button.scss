@@ -1,4 +1,4 @@
 .main-button {
-    color: #FFFFFF;
+    @include color(#FFFFFF);
     background: linear-gradient(to left top, $color-primary, $color-secondary);
 }

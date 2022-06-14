@@ -1,4 +1,10 @@
+.menu {
+    &-h1 {
+    font-family: 'Shrikhand', cursive;
+    }
+}
+
 .fa-circle-check {
-    background-color: $color-tertiary;
-    color: #FFFFFF;
+    @include background-color($color-tertiary);
+    @include color(#FFFFFF);
 }

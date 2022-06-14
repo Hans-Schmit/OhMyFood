@@ -8,22 +8,9 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.logo, .menu-h1 {
-  font-family: 'Shrikhand', cursive;
-}
-
 a {
   text-decoration: none;
   color: black;
-}
-
-.light-grey-bg {
-  background-color: #F7F7F7;
-}
-
-.shadow {
-  -webkit-box-shadow: 2px 2px 30px -10px #CCCCCC;
-          box-shadow: 2px 2px 30px -10px #CCCCCC;
 }
 
 .main-button {
@@ -32,11 +19,20 @@ a {
   background: linear-gradient(to left top, #9356DC, #FF79DA);
 }
 
-footer {
-  background-color: #444444;
+.header-logo {
+  font-family: 'Shrikhand', cursive;
 }
 
 .footer {
+  background-color: #444444;
+}
+
+.footer-logo {
+  color: #FFFFFF;
+  font-family: 'Shrikhand', cursive;
+}
+
+.footer-link {
   color: #FFFFFF;
 }
 
@@ -51,13 +47,26 @@ footer {
   color: #FFFFFF;
 }
 
-.funct-icon {
+.functioning-icon {
   color: #777777;
 }
 
-.new {
+.restaurant {
+  background-color: #F7F7F7;
+}
+
+.restaurant-card {
+  -webkit-box-shadow: 2px 2px 30px -10px #CCCCCC;
+          box-shadow: 2px 2px 30px -10px #CCCCCC;
+}
+
+.restaurant-card-new {
   background-color: #99E2D0;
   color: #2c9c81;
+}
+
+.menu-h1 {
+  font-family: 'Shrikhand', cursive;
 }
 
 .fa-circle-check {

@@ -1,0 +1,11 @@
+@mixin background-color($color: transparent) {
+    background-color: $color;
+}
+
+@mixin color($color: black) {
+    color: $color;
+}
+
+@mixin box-shadow {
+    box-shadow: 2px 2px 30px -10px #CCCCCC;
+}

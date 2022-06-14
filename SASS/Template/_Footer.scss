@@ -1,7 +1,10 @@
-footer {
-    background-color: $darker-grey;
-}
-
 .footer {
-    color: #FFFFFF;
+    @include background-color($darker-grey);
+    &-logo {
+        @include color(#FFFFFF);
+        font-family: 'Shrikhand', cursive;
+    }
+    &-link {
+        @include color(#FFFFFF);
+    }
 }
