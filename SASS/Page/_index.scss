@@ -17,18 +17,30 @@
 
 .functioning {
     @include flex-box(column, nowrap);
+    padding: 10px 4% 30px 4%;
     &-card {
-        width: 85%;
-        height: 40px;
-        border-radius: 25px;
+        width: 95%;
+        height: 60px;
+        margin: 10px 0px 10px 10px;
+        border-radius: 15px;
         @include background-color($light-grey);
+        @include flex-box(row, nowrap);
+        align-items: center;
         @include box-shadow;
+        line-height: 25px;
+        font-weight: bold;
         &-number {
+            width: 25px;
+            height: 25px;
+            border-radius: 25px;
+            text-align: center;
             @include background-color($color-primary);
             @include color(#FFFFFF);
+            margin-left: -10px;
         }
         &-icon {
-            color: $dark-grey;
+            @include color($dark-grey);
+            margin: 0px 20px 0px 20px;
         }
     }
     
