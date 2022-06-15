@@ -1,4 +1,10 @@
 .header {
+    width: 100%;
+    @include flex-box(row, nowrap);
+    justify-content: center;
+    &-icon {
+        
+    }
     &-logo {
         font-family: 'Shrikhand', cursive;
     }

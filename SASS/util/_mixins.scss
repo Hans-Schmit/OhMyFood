@@ -9,3 +9,8 @@
 @mixin box-shadow {
     box-shadow: 2px 2px 30px -10px #CCCCCC;
 }
+
+@mixin flex-box($direction: row, $wrap: nowrap){
+    display: flex;
+    flex-flow: $direction $wrap;
+}

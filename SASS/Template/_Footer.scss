@@ -3,8 +3,22 @@
     &-logo {
         @include color(#FFFFFF);
         font-family: 'Shrikhand', cursive;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 15px 30px;
     }
-    &-link {
-        @include color(#FFFFFF);
+    &-list {
+        list-style-type: none;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 30px;
+        &-link {
+            @include color(#FFFFFF);
+            line-height: 25px;
+            
+        &-icon {
+            width :30px;
+            padding-right: 10px;
+        }
+        }
     }
+    
 }
