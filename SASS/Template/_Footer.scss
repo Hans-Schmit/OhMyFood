@@ -1,15 +1,17 @@
 .footer {
     @include background-color($darker-grey);
+    padding: 25px 0px 35px 30px;
     &-logo {
         @include color(#FFFFFF);
         font-family: 'Shrikhand', cursive;
         margin: 0px 0px 0px 0px;
-        padding: 0px 0px 15px 30px;
+        padding: 0px 0px 15px 0px;
+        font-size: 20px;
     }
     &-list {
         list-style-type: none;
         margin: 0px 0px 0px 0px;
-        padding: 0px 0px 0px 30px;
+        padding: 0px;
     }
     &-link {
         @include color(#FFFFFF);
