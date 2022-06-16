@@ -157,21 +157,21 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
   width: 100%;
-  padding: 0% 5% 0% 5%;
+  padding: 0% 5% 50px 5%;
+}
+
+.restaurant h2 {
+  margin: 50px 0px 5px 0px;
 }
 
 .restaurant-card {
-  width: 90%;
+  width: 100%;
   height: 300px;
   border-radius: 25px;
   -webkit-box-shadow: 5px 5px 30px -10px #777777;
           box-shadow: 5px 5px 30px -10px #777777;
+  margin-top: 20px;
 }
 
 .restaurant-imgbox {
@@ -211,10 +211,30 @@ a {
 .restaurant-textbox {
   width: 100%;
   height: 30%;
+  padding: 20px 20px 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .restaurant-textbox h3 {
-  margin: 0px;
+  margin: 0px 0px 5px 0px;
+}
+
+.restaurant i {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
 }
 
 .menu h1 {
