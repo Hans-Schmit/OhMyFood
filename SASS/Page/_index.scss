@@ -29,19 +29,19 @@
         @include box-shadow;
         line-height: 25px;
         font-weight: bold;
-        &-number {
-            width: 25px;
-            height: 25px;
-            border-radius: 25px;
-            text-align: center;
-            @include background-color($color-primary);
-            @include color(#FFFFFF);
-            margin-left: -10px;
-        }
-        &-icon {
-            @include color($dark-grey);
-            margin: 0px 20px 0px 20px;
-        }
+    }
+    &-number {
+        width: 25px;
+        height: 25px;
+        border-radius: 25px;
+        text-align: center;
+        @include background-color($color-primary);
+        @include color(#FFFFFF);
+        margin-left: -10px;
+    }
+    &-icon {
+        @include color($dark-grey);
+        margin: 0px 20px 0px 20px;
     }
     
 }
@@ -49,34 +49,50 @@
 .restaurant {
     @include background-color($light-grey);
     @include flex-box(column, nowrap);
+    justify-content: space-around;
+    align-items: stretch;
     width: 100%;
+    padding: 0% 5% 0% 5%;
     &-card {
         width: 90%;
         height: 300px;
         border-radius: 25px;
         @include box-shadow;
-        &-imgbox {
-            width: 100%;
-            height: 70%;
-            &-figure {
-                width: 100%;
-                height: 100%;
-                margin: 0px;
-                &-img {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 25px 25px 0px 0px;
-                    object-fit: cover;
-                }
-            }
-            &-new {
-                @include background-color($color-tertiary);
-                color: darken($color: $color-tertiary, $amount: 35%);
-            }
-        }
-        &-textbox {
-            width: 100%;
-            height: 30%;
+    }
+    &-imgbox {
+        width: 100%;
+        height: 70%;
+        position: relative;
+    }
+    &-figure {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+    &-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 25px 25px 0px 0px;
+        object-fit: cover;
+    }
+    &-new {
+        width: 90px;
+        height: 35px;
+        @include background-color($color-tertiary);
+        color: darken($color: $color-tertiary, $amount: 38%);
+        line-height: 35px;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 2px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    &-textbox {
+        width: 100%;
+        height: 30%;
+        & h3 {
+            margin: 0px;
         }
     }
 }

@@ -65,12 +65,12 @@ a {
   padding: 0px 0px 0px 30px;
 }
 
-.footer-list-link {
+.footer-link {
   color: #FFFFFF;
   line-height: 25px;
 }
 
-.footer-list-link-icon {
+.footer-icon {
   width: 30px;
   padding-right: 10px;
 }
@@ -133,7 +133,7 @@ a {
   font-weight: bold;
 }
 
-.functioning-card-number {
+.functioning-number {
   width: 25px;
   height: 25px;
   border-radius: 25px;
@@ -143,7 +143,7 @@ a {
   margin-left: -10px;
 }
 
-.functioning-card-icon {
+.functioning-icon {
   color: #777777;
   margin: 0px 20px 0px 20px;
 }
@@ -157,7 +157,13 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   width: 100%;
+  padding: 0% 5% 0% 5%;
 }
 
 .restaurant-card {
@@ -168,18 +174,19 @@ a {
           box-shadow: 5px 5px 30px -10px #777777;
 }
 
-.restaurant-card-imgbox {
+.restaurant-imgbox {
   width: 100%;
   height: 70%;
+  position: relative;
 }
 
-.restaurant-card-imgbox-figure {
+.restaurant-figure {
   width: 100%;
   height: 100%;
   margin: 0px;
 }
 
-.restaurant-card-imgbox-figure-img {
+.restaurant-image {
   width: 100%;
   height: 100%;
   border-radius: 25px 25px 0px 0px;
@@ -187,21 +194,34 @@ a {
      object-fit: cover;
 }
 
-.restaurant-card-imgbox-new {
+.restaurant-new {
+  width: 90px;
+  height: 35px;
   background-color: #99E2D0;
-  color: #2c9c81;
+  color: #299077;
+  line-height: 35px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
-.restaurant-card-textbox {
+.restaurant-textbox {
   width: 100%;
   height: 30%;
 }
 
-.menu-h1 {
+.restaurant-textbox h3 {
+  margin: 0px;
+}
+
+.menu h1 {
   font-family: 'Shrikhand', cursive;
 }
 
-.fa-circle-check {
+.menu .fa-circle-check {
   background-color: #99E2D0;
   color: #FFFFFF;
 }
