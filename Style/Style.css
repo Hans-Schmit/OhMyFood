@@ -135,6 +135,14 @@ a {
   font-weight: bold;
 }
 
+.functioning-card:hover {
+  background-color: #f2eafb;
+}
+
+.functioning-card:hover .functioning-icon {
+  color: #9356DC;
+}
+
 .functioning-number {
   width: 25px;
   height: 25px;

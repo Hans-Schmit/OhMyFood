@@ -29,6 +29,12 @@
         @include box-shadow;
         line-height: 25px;
         font-weight: bold;
+        &:hover {
+            background-color: lighten($color: $color-primary, $amount: 35%);
+            .functioning-icon {
+                @include color($color-primary);
+            }
+        }
     }
     &-number {
         width: 25px;
