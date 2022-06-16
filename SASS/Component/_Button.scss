@@ -1,6 +1,9 @@
 .main-button {
+    height: 45px;
     @include color(#FFFFFF);
     background: linear-gradient(to left top, $color-primary, $color-secondary);
     border-style: none;
     border-radius: 25px;
+    padding: 0px 20px 0px 20px;
+    font-weight: bold;
 }

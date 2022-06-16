@@ -18,11 +18,14 @@ a {
 }
 
 .main-button {
+  height: 45px;
   color: #FFFFFF;
   background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
   background: linear-gradient(to left top, #9356DC, #FF79DA);
   border-style: none;
   border-radius: 25px;
+  padding: 0px 20px 0px 20px;
+  font-weight: bold;
 }
 
 .header {
@@ -100,6 +103,19 @@ a {
 
 .location-icon {
   margin-right: 15px;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .functioning {
