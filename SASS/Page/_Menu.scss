@@ -18,16 +18,22 @@
     border-radius: 45px 45px 0px 0px;
     padding: 0px 5% 0px 5%;
     position: relative;
-    top: -35px;
+    top: -40px;
     &-title {
         @include flex-box(row, nowrap);
         justify-content: space-between;
         align-items: center;
+        padding: 30px 0px 30px 0px;
         &-text{
         font-family: 'Shrikhand', cursive;
+        font-size: 28px;
+        margin: 0px;
         }
         &-icon {
-            padding-right: 30px
+            width: 25px;
+            height: 25px;
+            font-size: 25px;
+            margin-right: 20px;
         }
     }
     & .fa-circle-check {
