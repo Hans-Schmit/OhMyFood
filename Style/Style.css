@@ -18,7 +18,7 @@ a {
 }
 
 .main-button {
-  height: 45px;
+  height: 50px;
   color: #FFFFFF;
   background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
   background: linear-gradient(to left top, #9356DC, #FF79DA);
@@ -26,6 +26,9 @@ a {
   border-radius: 25px;
   padding: 0px 20px 0px 20px;
   font-weight: bold;
+  font-size: 16px;
+  -webkit-box-shadow: 5px 5px 30px -10px #777777;
+          box-shadow: 5px 5px 30px -10px #777777;
 }
 
 .header {
@@ -53,7 +56,7 @@ a {
 
 .footer {
   background-color: #444444;
-  padding: 25px 0px 35px 30px;
+  padding: 25px 0px 25px 5%;
 }
 
 .footer-logo {
@@ -106,6 +109,7 @@ a {
 }
 
 .description {
+  background-color: #EEEEEE;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,6 +120,18 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.description-title {
+  width: 65%;
+  margin: 35px 0px 15px 0px;
+}
+
+.description-text {
+  width: 80%;
+  padding-bottom: 25px;
 }
 
 .functioning {
@@ -126,12 +142,16 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  padding: 10px 4% 30px 4%;
+  padding: 20px 5% 50px 5%;
+}
+
+.functioning-title {
+  margin-top: 30px;
 }
 
 .functioning-card {
   width: 95%;
-  height: 60px;
+  height: 75px;
   margin: 10px 0px 10px 10px;
   border-radius: 15px;
   background-color: #EEEEEE;
@@ -171,6 +191,9 @@ a {
 
 .functioning-icon {
   color: #777777;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
   margin: 0px 20px 0px 20px;
 }
 
@@ -187,13 +210,13 @@ a {
   padding: 0% 5% 50px 5%;
 }
 
-.restaurant h2 {
+.restaurant-title {
   margin: 50px 0px 5px 0px;
 }
 
 .restaurant-card {
   width: 100%;
-  height: 300px;
+  height: 250px;
   border-radius: 25px;
   -webkit-box-shadow: 5px 5px 30px -10px #777777;
           box-shadow: 5px 5px 30px -10px #777777;
@@ -257,7 +280,7 @@ a {
   margin: 0px 0px 5px 0px;
 }
 
-.restaurant i {
+.restaurant-icon {
   width: 30px;
   height: 30px;
   font-size: 30px;
