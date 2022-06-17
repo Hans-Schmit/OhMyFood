@@ -1,6 +1,34 @@
+.topmenu {
+    height: 255px;
+    z-index: -1;
+    &-figure {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+    &-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
 .menu {
-    & h1 {
-    font-family: 'Shrikhand', cursive;
+    @include background-color(#FFFFFF);
+    border-radius: 45px 45px 0px 0px;
+    padding: 0px 5% 0px 5%;
+    position: relative;
+    top: -35px;
+    &-title {
+        @include flex-box(row, nowrap);
+        justify-content: space-between;
+        align-items: center;
+        &-text{
+        font-family: 'Shrikhand', cursive;
+        }
+        &-icon {
+            padding-right: 30px
+        }
     }
     & .fa-circle-check {
         @include background-color($color-tertiary);
