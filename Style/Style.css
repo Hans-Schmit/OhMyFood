@@ -47,6 +47,16 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.header-icon {
+  position: absolute;
+  left: 5%;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
 }
 
 .header-logo {
