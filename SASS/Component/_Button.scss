@@ -4,8 +4,18 @@
     background: linear-gradient(to left top, $color-primary, $color-secondary);
     border-style: none;
     border-radius: 25px;
-    padding: 0px 20px 0px 20px;
+    text-align: center;
     font-weight: bold;
     font-size: 16px;
     @include box-shadow;
+}
+
+.description .main-button {
+    padding: 0px 20px 0px 20px;
+}
+
+.menu .main-button {
+    width: 180px;
+    padding: 0px 40px 0px 40px;
+    margin-top: 35px;
 }
