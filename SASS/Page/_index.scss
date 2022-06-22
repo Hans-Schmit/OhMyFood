@@ -44,6 +44,9 @@
         @include box-shadow;
         line-height: 25px;
         font-weight: bold;
+        @media only screen and (min-width: 768px) {
+            width: 50%;
+        }
         &:hover {
             background-color: lighten($color: $color-primary, $amount: 35%);
             .functioning-icon {
@@ -72,10 +75,14 @@
 
 .restaurant {
     @include background-color($light-grey);
-    @include flex-box(column, nowrap);
+    @include flex-box(row, wrap);
     width: 100%;
     padding: 0% 5% 50px 5%;
+    @media only screen and (min-width: 768px) {
+        justify-content: space-between;
+    }
     &-title {
+        width : 100%;
         margin: 50px 0px 5px 0px;
     }
     &-card {
@@ -84,6 +91,13 @@
         border-radius: 25px;
         @include box-shadow;
         margin-top: 20px;
+        @media only screen and (min-width: 768px) {
+            width: 48%;
+        }
+        @media only screen and (min-width: 992px) {
+            height: 300px;
+            margin-top: 30px;
+        }
     }
     &-imgbox {
         width: 100%;

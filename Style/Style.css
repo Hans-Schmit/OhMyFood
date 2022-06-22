@@ -12,6 +12,13 @@ body {
   margin: 0px;
 }
 
+@media only screen and (min-width: 1500px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -39,6 +46,12 @@ a {
   width: 180px;
   padding: 0px 40px 0px 40px;
   margin-top: 35px;
+}
+
+@media only screen and (min-width: 992px) {
+  .menu .main-button {
+    margin-right: 15%;
+  }
 }
 
 .header {
@@ -79,6 +92,18 @@ a {
   padding: 25px 0px 25px 5%;
 }
 
+@media only screen and (min-width: 992px) {
+  .footer-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
 .footer-logo {
   color: #FFFFFF;
   font-family: 'Shrikhand', cursive;
@@ -87,10 +112,32 @@ a {
   font-size: 20px;
 }
 
+@media only screen and (min-width: 992px) {
+  .footer-logo {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .footer-list {
   list-style-type: none;
   margin: 0px 0px 0px 0px;
   padding: 0px;
+}
+
+@media only screen and (min-width: 992px) {
+  .footer-list {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .footer-link {
@@ -191,6 +238,12 @@ a {
   font-weight: bold;
 }
 
+@media only screen and (min-width: 768px) {
+  .functioning-card {
+    width: 50%;
+  }
+}
+
 .functioning-card:hover {
   background-color: #f2eafb;
 }
@@ -222,15 +275,24 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   width: 100%;
   padding: 0% 5% 50px 5%;
 }
 
+@media only screen and (min-width: 768px) {
+  .restaurant {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .restaurant-title {
+  width: 100%;
   margin: 50px 0px 5px 0px;
 }
 
@@ -241,6 +303,19 @@ a {
   -webkit-box-shadow: 5px 5px 30px -10px #777777;
           box-shadow: 5px 5px 30px -10px #777777;
   margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .restaurant-card {
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .restaurant-card {
+    height: 300px;
+    margin-top: 30px;
+  }
 }
 
 .restaurant-imgbox {
@@ -334,13 +409,24 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .menu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .menu-title {
@@ -394,6 +480,12 @@ a {
 
 .menu-category {
   width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .menu-category {
+    width: 45%;
+  }
 }
 
 .menu-card {

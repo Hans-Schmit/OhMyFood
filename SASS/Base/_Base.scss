@@ -9,6 +9,10 @@
 
 body {
     margin: 0px;
+    @media only screen and (min-width: 1500px) {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
 }
 
 a {
