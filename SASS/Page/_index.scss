@@ -1,3 +1,90 @@
+header,main,footer {
+    animation: fade-in 0.3s linear 3s both;
+}
+.loading {
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    @include flex-box(row, wrap);
+    justify-content: center;
+    align-items: center;
+    animation: fade-out 0.3s linear 3s forwards;
+    &-text {
+        width: 100%;
+        font-family: 'Shrikhand', cursive;
+        font-size: 30px;
+    }
+    &-animation {
+        content: '';
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+        border: 5px solid transparent;
+        border-top-color: $color-primary;
+        border-bottom-color: $color-primary;
+        animation: loading-circle-1 1s linear infinite;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            bottom: 5px;
+            left: 5px;
+            right: 5px;
+            border-radius: 70px;
+            border: 5px solid transparent;
+            border-top-color: $color-secondary;
+            border-bottom-color: $color-secondary;
+            animation: loading-circle-2 2s linear infinite;
+        }
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        height: 0px;
+        overflow: hidden;
+    }
+    100% {
+        opacity: 1;
+        height: initial;
+        overflow: initial;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        height: 0px;
+        overflow: hidden;
+    }
+}
+
+@keyframes loading-circle-1 {
+    0% {
+        transform: rotate(0deg) scale(1,1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.5,1.5);
+    }
+    100% {
+        transform: rotate(360deg) scale(1,1);
+    }
+}
+
+@keyframes loading-circle-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .location {
     height: 50px;
     @include flex-box();
