@@ -36,6 +36,15 @@ a {
   font-size: 16px;
   -webkit-box-shadow: 5px 5px 30px -10px #777777;
           box-shadow: 5px 5px 30px -10px #777777;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.main-button:hover {
+  background: -webkit-gradient(linear, right bottom, left top, from(#a16be0), to(#ff93e1));
+  background: linear-gradient(to left top, #a16be0, #ff93e1);
+  -webkit-box-shadow: 5px 5px 35px -5px #515151;
+          box-shadow: 5px 5px 35px -5px #515151;
 }
 
 .description .main-button {

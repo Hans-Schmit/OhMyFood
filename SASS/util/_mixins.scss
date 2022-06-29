@@ -6,8 +6,8 @@
     color: $color;
 }
 
-@mixin box-shadow {
-    box-shadow: 5px 5px 30px -10px $dark-grey;
+@mixin box-shadow ($h-off: 5px, $v-off: 5px, $blur: 30px, $spread: -10px, $color: $dark-grey){
+    box-shadow: $h-off $v-off $blur $spread $color;
 }
 
 @mixin flex-box($direction: row, $wrap: nowrap){
