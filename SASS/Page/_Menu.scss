@@ -1,3 +1,15 @@
+@keyframes menu-slide {
+    0% {
+        transform: translateY(+20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
 .topmenu {
     height: 255px;
     z-index: -1;
@@ -71,6 +83,12 @@
         justify-content: space-between;
         border-radius: 15px;
         margin: 0px 0px 15px 0px;
+        @for $i from 1 through 4 {
+            &:nth-of-type(#{$i}) {
+                $delay: ($i/5) + s;
+                animation: menu-slide 0.3s ease-in-out $delay both;
+            }
+        }
         &-icon {
             width : 60px;
             min-width: 60px;
