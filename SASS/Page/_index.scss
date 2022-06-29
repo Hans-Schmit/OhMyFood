@@ -1,6 +1,55 @@
-header,main,footer {
-    animation: fade-in 0.3s linear 3s both;
+@keyframes fade-in {
+    0% {
+        height: 100vh;
+        overflow: hidden;
+    }
+    99% {
+        height: 100vh;
+        overflow: hidden;
+    }
+    100% {
+        height: auto;
+        overflow: initial;
+    }
 }
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        height: 0px;
+        overflow: hidden;
+    }
+}
+
+@keyframes loading-circle-1 {
+    0% {
+        transform: rotate(0deg) scale(1,1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.5,1.5);
+    }
+    100% {
+        transform: rotate(360deg) scale(1,1);
+    }
+}
+
+@keyframes loading-circle-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.index-body {
+    animation: fade-in 0.1s linear 3.2s both;
+}
+
 .loading {
     z-index: 99;
     width: 100%;
@@ -37,51 +86,6 @@ header,main,footer {
             border-bottom-color: $color-secondary;
             animation: loading-circle-2 2s linear infinite;
         }
-    }
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-        height: 0px;
-        overflow: hidden;
-    }
-    100% {
-        opacity: 1;
-        height: initial;
-        overflow: initial;
-    }
-}
-
-@keyframes fade-out {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        height: 0px;
-        overflow: hidden;
-    }
-}
-
-@keyframes loading-circle-1 {
-    0% {
-        transform: rotate(0deg) scale(1,1);
-    }
-    50% {
-        transform: rotate(180deg) scale(1.5,1.5);
-    }
-    100% {
-        transform: rotate(360deg) scale(1,1);
-    }
-}
-
-@keyframes loading-circle-2 {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
     }
 }
 
