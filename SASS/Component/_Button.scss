@@ -1,5 +1,7 @@
 .main-button {
     height: 50px;
+    position: relative;
+    z-index: 1;
     @include color(#FFFFFF);
     background: linear-gradient(to left top, $color-primary, $color-secondary);
     border-style: none;
@@ -8,10 +10,25 @@
     font-weight: bold;
     font-size: 16px;
     @include box-shadow;
-    transition: all 0.2s linear;
     &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0;
         background: linear-gradient(to left top, lighten($color-primary, 5%), lighten($color-secondary, 5%));
+        border-style: none;
+        border-radius: 25px;
         @include box-shadow(5px, 5px, 35px, -5px, darken($dark-grey, 15%));
+        transition: opacity 0.2s;
     }
 }
 
