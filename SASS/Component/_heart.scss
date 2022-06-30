@@ -3,32 +3,40 @@
     height: 30px;
     font-size: 30px;
     position: relative;
-    &:hover {
-        & .fa-solid {
-            transform: scale(1);
-            opacity: 1;
-        }
+    &-checkbox {
+        visibility: hidden;
     }
-    & .fa-regular {
+    &-icon {
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
         z-index: 1;
+        &::after {
+            content: '\f004';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            transform: scale(0.01);
+            opacity: 0;
+            background: linear-gradient(to bottom, $color-primary, $color-secondary);
+            background-clip: text;
+            color: transparent;
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            transition: all 0.4s;
+        }
     }
-    & .fa-solid {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 2;
-        transform: scale(0.01);
-        opacity: 0;
-        background: linear-gradient(to bottom, $color-primary, $color-secondary);
-        background-clip: text;
-        color: transparent;
-        transition: all 0.4s;
+}
+
+input:checked ~ .heart-icon {
+    &::after {
+        transform: scale(1);
+        opacity: 1;
     }
 }
