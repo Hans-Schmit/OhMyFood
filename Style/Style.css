@@ -166,14 +166,23 @@ input:checked ~ .heart-icon::after {
 }
 
 @media only screen and (min-width: 992px) {
+  .footer {
+    padding: 25px 0px 25px 0px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
   .footer-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -200,7 +209,7 @@ input:checked ~ .heart-icon::after {
 
 @media only screen and (min-width: 992px) {
   .footer-list {
-    width: 80%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
