@@ -491,6 +491,8 @@ input:checked ~ .heart-icon::after {
   height: 75px;
   margin: 10px 0px 10px 10px;
   border-radius: 15px;
+  z-index: 1;
+  position: relative;
   background-color: #EEEEEE;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -520,12 +522,27 @@ input:checked ~ .heart-icon::after {
   }
 }
 
-.functioning-card:hover {
+.functioning-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 15px;
+  z-index: -1;
   background-color: #f2eafb;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
-.functioning-card:hover .functioning-icon {
-  color: #9356DC;
+.functioning-card:hover::after {
+  opacity: 1;
+}
+
+.functioning-card:hover .functioning-icon::after {
+  opacity: 1;
 }
 
 .functioning-number {
@@ -544,6 +561,59 @@ input:checked ~ .heart-icon::after {
   height: 20px;
   font-size: 20px;
   margin: 0px 20px 0px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.functioning .fa-mobile-screen-button::after {
+  content: "\f3cd";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  color: #9356DC;
+  opacity: 0;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.functioning .fa-list::after {
+  content: "\f03a";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  color: #9356DC;
+  opacity: 0;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.functioning .fa-store::after {
+  content: "\f54e";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  color: #9356DC;
+  opacity: 0;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .restaurant {

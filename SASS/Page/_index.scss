@@ -140,6 +140,8 @@
         height: 75px;
         margin: 10px 0px 10px 10px;
         border-radius: 15px;
+        z-index: 1;
+        position: relative;
         @include background-color($light-grey);
         @include flex-box(row, nowrap);
         align-items: center;
@@ -153,10 +155,27 @@
         @media only screen and (min-width: 992px) {
             width: 30%;
         }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 15px;
+            z-index: -1;
+            @include background-color(lighten($color: $color-primary, $amount: 35%));
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
         &:hover {
-            background-color: lighten($color: $color-primary, $amount: 35%);
+            &::after {
+                opacity: 1;
+            }
             .functioning-icon {
-                @include color($color-primary);
+                &::after {
+                    opacity: 1;
+                }
             }
         }
     }
@@ -175,6 +194,62 @@
         height: 20px;
         font-size: 20px;
         margin: 0px 20px 0px 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    & .fa-mobile-screen-button {
+        &::after {
+            content: "\f3cd";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            @include color($color-primary);
+            opacity: 0;
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            transition: opacity 0.2s;
+        }
+    }
+
+    & .fa-list {
+        &::after {
+            content: "\f03a";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            @include color($color-primary);
+            opacity: 0;
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            transition: opacity 0.2s;
+        }
+    }
+
+    & .fa-store {
+        &::after {
+            content: "\f54e";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            @include color($color-primary);
+            opacity: 0;
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            transition: opacity 0.2s;
+        }
     }
     
 }
