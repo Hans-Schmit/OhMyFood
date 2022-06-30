@@ -319,6 +319,11 @@ a {
   }
 }
 
+.index-body {
+  -webkit-animation: fade-in 0.1s linear 3.2s both;
+          animation: fade-in 0.1s linear 3.2s both;
+}
+
 .loading {
   z-index: 99;
   width: 100%;
@@ -326,6 +331,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  background-color: #FFFFFF;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;

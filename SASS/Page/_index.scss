@@ -46,9 +46,9 @@
 }
 
 
-// .index-body {
-//     animation: fade-in 0.1s linear 3.2s both;
-// }
+.index-body {
+    animation: fade-in 0.1s linear 3.2s both;
+}
 
 .loading {
     z-index: 99;
@@ -57,6 +57,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    @include background-color(#FFFFFF);
     text-align: center;
     @include flex-box(row, wrap);
     justify-content: center;
