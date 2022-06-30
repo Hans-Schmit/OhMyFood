@@ -856,6 +856,30 @@ input:checked ~ .heart-icon::after {
   }
 }
 
+.menu-checkbox {
+  visibility: hidden;
+}
+
+.menu-label:nth-of-type(1) .menu-card {
+  -webkit-animation: menu-slide 0.3s ease-in-out 0.2s both;
+          animation: menu-slide 0.3s ease-in-out 0.2s both;
+}
+
+.menu-label:nth-of-type(2) .menu-card {
+  -webkit-animation: menu-slide 0.3s ease-in-out 0.4s both;
+          animation: menu-slide 0.3s ease-in-out 0.4s both;
+}
+
+.menu-label:nth-of-type(3) .menu-card {
+  -webkit-animation: menu-slide 0.3s ease-in-out 0.6s both;
+          animation: menu-slide 0.3s ease-in-out 0.6s both;
+}
+
+.menu-label:nth-of-type(4) .menu-card {
+  -webkit-animation: menu-slide 0.3s ease-in-out 0.8s both;
+          animation: menu-slide 0.3s ease-in-out 0.8s both;
+}
+
 .menu-card {
   width: 100%;
   height: 65px;
@@ -869,45 +893,8 @@ input:checked ~ .heart-icon::after {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  /*justify-content: space-between;*/
   border-radius: 15px;
-  margin: 0px 0px 15px 0px;
   overflow: hidden;
-}
-
-.menu-card:nth-of-type(1) {
-  -webkit-animation: menu-slide 0.3s ease-in-out 0.2s both;
-          animation: menu-slide 0.3s ease-in-out 0.2s both;
-}
-
-.menu-card:nth-of-type(2) {
-  -webkit-animation: menu-slide 0.3s ease-in-out 0.4s both;
-          animation: menu-slide 0.3s ease-in-out 0.4s both;
-}
-
-.menu-card:nth-of-type(3) {
-  -webkit-animation: menu-slide 0.3s ease-in-out 0.6s both;
-          animation: menu-slide 0.3s ease-in-out 0.6s both;
-}
-
-.menu-card:nth-of-type(4) {
-  -webkit-animation: menu-slide 0.3s ease-in-out 0.8s both;
-          animation: menu-slide 0.3s ease-in-out 0.8s both;
-}
-
-.menu-card:hover .menu-iconbox {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-}
-
-.menu-card:hover .menu-icon {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
-.menu-card:hover .menu-price {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
 }
 
 .menu-iconbox {
@@ -948,8 +935,11 @@ input:checked ~ .heart-icon::after {
 }
 
 .menu-descriptionbox {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -961,6 +951,9 @@ input:checked ~ .heart-icon::after {
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu-text {
@@ -972,9 +965,24 @@ input:checked ~ .heart-icon::after {
 .menu-price {
   font-weight: 500;
   text-align: center;
-  padding: 36px 25px 10px 25px;
+  padding: 37px 25px 9px 10px;
   -webkit-transform: translateX(60px);
           transform: translateX(60px);
   -webkit-transition: all 0.6s 0.06s;
   transition: all 0.6s 0.06s;
+}
+
+input:checked ~ .menu-card .menu-price {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+input:checked ~ .menu-card .menu-iconbox {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+input:checked ~ .menu-card .menu-icon {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
