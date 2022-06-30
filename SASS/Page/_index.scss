@@ -125,8 +125,15 @@
 .functioning {
     @include flex-box(column, nowrap);
     padding: 20px 5% 50px 5%;
+    @media only screen and (min-width: 768px) {
+        @include flex-box(row, wrap);
+        justify-content: space-around;
+    }
     &-title {
         margin-top: 30px;;
+        @media only screen and (min-width: 768px) {
+            width: 100%;
+        }
     }
     &-card {
         width: 95%;
@@ -140,7 +147,11 @@
         line-height: 25px;
         font-weight: bold;
         @media only screen and (min-width: 768px) {
-            width: 50%;
+            width: 45%;
+
+        }
+        @media only screen and (min-width: 992px) {
+            width: 30%;
         }
         &:hover {
             background-color: lighten($color: $color-primary, $amount: 35%);

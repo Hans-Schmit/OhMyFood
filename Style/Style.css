@@ -462,8 +462,28 @@ input:checked ~ .heart-icon::after {
   padding: 20px 5% 50px 5%;
 }
 
+@media only screen and (min-width: 768px) {
+  .functioning {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .functioning-title {
   margin-top: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .functioning-title {
+    width: 100%;
+  }
 }
 
 .functioning-card {
@@ -490,7 +510,13 @@ input:checked ~ .heart-icon::after {
 
 @media only screen and (min-width: 768px) {
   .functioning-card {
-    width: 50%;
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .functioning-card {
+    width: 30%;
   }
 }
 
