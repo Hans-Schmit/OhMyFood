@@ -935,6 +935,8 @@ input:checked ~ .heart-icon::after {
   font-weight: 500;
   text-align: center;
   padding: 37px 25px 9px 10px;
+  margin-left: -60px;
+  /*PAS OPTIMAL!!!*/
   -webkit-transform: translateX(60px);
           transform: translateX(60px);
   -webkit-transition: all 0.6s 0.06s;
@@ -942,6 +944,8 @@ input:checked ~ .heart-icon::after {
 }
 
 input:checked ~ .menu-card .menu-price {
+  margin-left: 0px;
+  /*PAS OPTIMAL!!!*/
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
 }
