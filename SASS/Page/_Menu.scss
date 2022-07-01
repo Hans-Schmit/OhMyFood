@@ -55,10 +55,10 @@
         }
     }
     &-h2 {
-        font-size: 18px;
-        font-weight: normal;
+        font-size: 16px;
+        font-weight: 300;
         margin: 0px;
-        padding: 20px 0px 20px 0px;
+        padding: 20px 0px 0px 0px;
         &-underline {
             text-decoration: underline solid $color-tertiary 2px;
             text-underline-offset: 7px;
@@ -75,6 +75,7 @@
     }
     &-category {
         width: 100%;
+        padding-bottom: 25px;
         @media only screen and (min-width: 992px) {
             width:45%;
         }
@@ -133,6 +134,8 @@
         text-overflow: ellipsis;
     }
     &-text {
+        font-size: 15px;
+        font-weight: 300;
         white-space: nowrap; 
         overflow: hidden;
         text-overflow: ellipsis;

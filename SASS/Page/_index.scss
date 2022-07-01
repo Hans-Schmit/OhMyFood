@@ -84,6 +84,9 @@
     &-icon {
         margin-right: 15px;
     }
+    &-text {
+        font-weight: 500;
+    }
 }
 
 .description{
@@ -99,6 +102,8 @@
     &-text {
         width: 80%;
         padding-bottom: 25px;
+        font-size: 17px;
+        font-weight: 300;
     }
 }
 
@@ -127,7 +132,7 @@
         align-items: center;
         @include box-shadow;
         line-height: 25px;
-        font-weight: bold;
+        font-weight: 500;
         @media only screen and (min-width: 768px) {
             width: 45%;
 
@@ -164,6 +169,8 @@
         height: 25px;
         border-radius: 25px;
         text-align: center;
+        font-size: 13px;
+        font-weight: 400;
         @include background-color($color-primary);
         @include color(#FFFFFF);
         margin-left: -10px;
@@ -296,8 +303,11 @@
         @include flex-box(row, nowrap);
         justify-content: space-between;
         align-items: center;
-        & h3 {
-            margin: 0px 0px 5px 0px;
-        }
+    }
+    &-name {
+        margin: 0px 0px 5px 0px;
+    }
+    &-text {
+        font-weight: 300;
     }
 }

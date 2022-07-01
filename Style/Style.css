@@ -34,7 +34,7 @@ a {
   border-style: none;
   border-radius: 25px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
   -webkit-box-shadow: 5px 5px 30px -10px #777777;
           box-shadow: 5px 5px 30px -10px #777777;
@@ -150,7 +150,7 @@ input:checked ~ .heart-icon::after {
 .header-icon {
   position: absolute;
   left: 5%;
-  top: 20px;
+  top: 22px;
   width: 20px;
   height: 20px;
   font-size: 20px;
@@ -158,11 +158,11 @@ input:checked ~ .heart-icon::after {
 
 .header-logo {
   font-family: 'Shrikhand', cursive;
-  font-size: xx-large;
+  font-size: 30px;
 }
 
 .footer {
-  background-color: #444444;
+  background-color: #393939;
   padding: 25px 0px 25px 5%;
 }
 
@@ -387,7 +387,7 @@ input:checked ~ .heart-icon::after {
       -ms-flex-align: center;
           align-items: center;
   background-color: #EBEBEB;
-  color: #444444;
+  color: #393939;
   -webkit-box-shadow: 0px 5px 15px -10px inset;
           box-shadow: 0px 5px 15px -10px inset;
 }
@@ -396,8 +396,12 @@ input:checked ~ .heart-icon::after {
   margin-right: 15px;
 }
 
+.location-text {
+  font-weight: 500;
+}
+
 .description {
-  background-color: #EEEEEE;
+  background-color: #F6F6F6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,6 +424,8 @@ input:checked ~ .heart-icon::after {
 .description-text {
   width: 80%;
   padding-bottom: 25px;
+  font-size: 17px;
+  font-weight: 300;
 }
 
 .functioning {
@@ -464,7 +470,7 @@ input:checked ~ .heart-icon::after {
   border-radius: 15px;
   z-index: 1;
   position: relative;
-  background-color: #EEEEEE;
+  background-color: #F6F6F6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,7 +484,7 @@ input:checked ~ .heart-icon::after {
   -webkit-box-shadow: 5px 5px 30px -10px #777777;
           box-shadow: 5px 5px 30px -10px #777777;
   line-height: 25px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 768px) {
@@ -521,6 +527,8 @@ input:checked ~ .heart-icon::after {
   height: 25px;
   border-radius: 25px;
   text-align: center;
+  font-size: 13px;
+  font-weight: 400;
   background-color: #9356DC;
   color: #FFFFFF;
   margin-left: -10px;
@@ -588,7 +596,7 @@ input:checked ~ .heart-icon::after {
 }
 
 .restaurant {
-  background-color: #EEEEEE;
+  background-color: #F6F6F6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,8 +696,12 @@ input:checked ~ .heart-icon::after {
           align-items: center;
 }
 
-.restaurant-textbox h3 {
+.restaurant-name {
   margin: 0px 0px 5px 0px;
+}
+
+.restaurant-text {
+  font-weight: 300;
 }
 
 @-webkit-keyframes menu-slide {
@@ -737,7 +749,7 @@ input:checked ~ .heart-icon::after {
 }
 
 .menu {
-  background-color: #EEEEEE;
+  background-color: #F6F6F6;
   border-radius: 45px 45px 0px 0px;
   padding: 0px 5% 75px 5%;
   margin-bottom: -40px;
@@ -796,10 +808,10 @@ input:checked ~ .heart-icon::after {
 }
 
 .menu-h2 {
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 16px;
+  font-weight: 300;
   margin: 0px;
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0px 0px 0px;
 }
 
 .menu-h2-underline {
@@ -819,6 +831,7 @@ input:checked ~ .heart-icon::after {
 
 .menu-category {
   width: 100%;
+  padding-bottom: 25px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -928,6 +941,8 @@ input:checked ~ .heart-icon::after {
 }
 
 .menu-text {
+  font-size: 15px;
+  font-weight: 300;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
