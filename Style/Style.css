@@ -100,7 +100,7 @@ a {
 }
 
 .heart-icon::after {
-  content: '\f004';
+  content: "\f004";
   position: absolute;
   top: 0;
   right: 0;
@@ -113,6 +113,7 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   font-family: FontAwesome;
   font-weight: normal;
