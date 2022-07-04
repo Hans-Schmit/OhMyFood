@@ -838,27 +838,18 @@ input:checked ~ .heart-icon::after {
 }
 
 .menu-checkbox {
+  width: 5px;
+  height: 5px;
   visibility: hidden;
 }
 
-.menu-label:nth-of-type(1) .menu-card {
-  -webkit-animation: menu-slide 0.3s ease-in-out 0.2s both;
-          animation: menu-slide 0.3s ease-in-out 0.2s both;
-}
-
-.menu-label:nth-of-type(2) .menu-card {
-  -webkit-animation: menu-slide 0.3s ease-in-out 0.4s both;
-          animation: menu-slide 0.3s ease-in-out 0.4s both;
-}
-
-.menu-label:nth-of-type(3) .menu-card {
-  -webkit-animation: menu-slide 0.3s ease-in-out 0.6s both;
-          animation: menu-slide 0.3s ease-in-out 0.6s both;
-}
-
-.menu-label:nth-of-type(4) .menu-card {
-  -webkit-animation: menu-slide 0.3s ease-in-out 0.8s both;
-          animation: menu-slide 0.3s ease-in-out 0.8s both;
+.menu-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
 }
 
 .menu-card {
@@ -875,7 +866,29 @@ input:checked ~ .heart-icon::after {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   border-radius: 15px;
+  margin: 20px 0px 20px 0px;
   overflow: hidden;
+  position: relative;
+}
+
+.menu-card:nth-of-type(1) {
+  -webkit-animation: menu-slide 0.3s ease-in-out 0.2s both;
+          animation: menu-slide 0.3s ease-in-out 0.2s both;
+}
+
+.menu-card:nth-of-type(2) {
+  -webkit-animation: menu-slide 0.3s ease-in-out 0.4s both;
+          animation: menu-slide 0.3s ease-in-out 0.4s both;
+}
+
+.menu-card:nth-of-type(3) {
+  -webkit-animation: menu-slide 0.3s ease-in-out 0.6s both;
+          animation: menu-slide 0.3s ease-in-out 0.6s both;
+}
+
+.menu-card:nth-of-type(4) {
+  -webkit-animation: menu-slide 0.3s ease-in-out 0.8s both;
+          animation: menu-slide 0.3s ease-in-out 0.8s both;
 }
 
 .menu-iconbox {
@@ -931,7 +944,6 @@ input:checked ~ .heart-icon::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -957,19 +969,19 @@ input:checked ~ .heart-icon::after {
   transition: all 0.6s 0.06s;
 }
 
-input:checked ~ .menu-card .menu-price {
+input:checked ~ .menu-price {
   margin-left: 0px;
   /*PAS OPTIMAL!!!*/
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
 }
 
-input:checked ~ .menu-card .menu-iconbox {
+input:checked ~ .menu-iconbox {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
 }
 
-input:checked ~ .menu-card .menu-icon {
+input:checked ~ .menu-iconbox .menu-icon {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
