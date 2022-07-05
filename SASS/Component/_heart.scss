@@ -7,19 +7,11 @@
         visibility: hidden;
     }
     &-icon {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        @include absolute-cover;
         z-index: 1;
         &::after {
             content: "\f004";
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
+            @include absolute-cover;
             z-index: 2;
             transform: scale(0.01);
             opacity: 0;
