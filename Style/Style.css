@@ -25,6 +25,7 @@ a {
 }
 
 .main-button {
+  width: auto;
   height: 50px;
   position: relative;
   z-index: 1;
@@ -69,6 +70,7 @@ a {
 
 .menu .main-button {
   width: 180px;
+  height: auto;
   padding: 0px 40px 0px 40px;
   margin-top: 35px;
 }
@@ -199,6 +201,7 @@ input:checked ~ .heart-icon::after {
 @media only screen and (min-width: 992px) {
   .footer-logo {
     width: 100%;
+    height: auto;
     text-align: center;
   }
 }
@@ -212,6 +215,7 @@ input:checked ~ .heart-icon::after {
 @media only screen and (min-width: 992px) {
   .footer-list {
     width: 100%;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -231,6 +235,7 @@ input:checked ~ .heart-icon::after {
 
 .footer-icon {
   width: 30px;
+  height: auto;
   padding-right: 10px;
 }
 
@@ -340,6 +345,7 @@ input:checked ~ .heart-icon::after {
 
 .loading-text {
   width: 100%;
+  height: auto;
   font-family: 'Shrikhand', cursive;
   font-size: 30px;
 }
@@ -372,6 +378,7 @@ input:checked ~ .heart-icon::after {
 }
 
 .location {
+  width: auto;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -418,11 +425,13 @@ input:checked ~ .heart-icon::after {
 
 .description-title {
   width: 65%;
+  height: auto;
   margin: 35px 0px 15px 0px;
 }
 
 .description-text {
   width: 80%;
+  height: auto;
   padding-bottom: 25px;
   font-size: 17px;
   font-weight: 300;
@@ -460,6 +469,7 @@ input:checked ~ .heart-icon::after {
 @media only screen and (min-width: 768px) {
   .functioning-title {
     width: 100%;
+    height: auto;
   }
 }
 
@@ -490,12 +500,14 @@ input:checked ~ .heart-icon::after {
 @media only screen and (min-width: 768px) {
   .functioning-card {
     width: 45%;
+    height: auto;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .functioning-card {
     width: 30%;
+    height: auto;
   }
 }
 
@@ -605,6 +617,7 @@ input:checked ~ .heart-icon::after {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   width: 100%;
+  height: auto;
   padding: 0% 5% 50px 5%;
 }
 
@@ -618,6 +631,7 @@ input:checked ~ .heart-icon::after {
 
 .restaurant-title {
   width: 100%;
+  height: auto;
   margin: 50px 0px 5px 0px;
 }
 
@@ -732,6 +746,7 @@ input:checked ~ .heart-icon::after {
 }
 
 .topmenu {
+  width: auto;
   height: 255px;
   z-index: -1;
 }
@@ -778,6 +793,7 @@ input:checked ~ .heart-icon::after {
 
 .menu-title {
   width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -829,12 +845,14 @@ input:checked ~ .heart-icon::after {
 
 .menu-category {
   width: 100%;
+  height: auto;
   padding-bottom: 25px;
 }
 
 @media only screen and (min-width: 992px) {
   .menu-category {
     width: 45%;
+    height: auto;
   }
 }
 
@@ -894,8 +912,8 @@ input:checked ~ .heart-icon::after {
 
 .menu-iconbox {
   width: 60px;
-  min-width: 60px;
   height: 100%;
+  min-width: 60px;
   background-color: #99E2D0;
   display: -webkit-box;
   display: -ms-flexbox;

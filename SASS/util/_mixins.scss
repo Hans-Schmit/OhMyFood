@@ -1,3 +1,8 @@
+@mixin dimensions($width: auto, $height: auto){
+    width: $width;
+    height: $height;
+}
+
 @mixin background-color($color: transparent) {
     background-color: $color;
 }

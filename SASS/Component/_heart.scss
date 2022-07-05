@@ -1,6 +1,5 @@
 .heart {
-    width: 30px;
-    height: 30px;
+    @include dimensions(30px, 30px);
     font-size: 30px;
     position: relative;
     &-checkbox {
