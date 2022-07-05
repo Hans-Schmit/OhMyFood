@@ -500,14 +500,14 @@ input:checked ~ .heart-icon::after {
 @media only screen and (min-width: 768px) {
   .functioning-card {
     width: 45%;
-    height: auto;
+    height: 75px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .functioning-card {
     width: 30%;
-    height: auto;
+    height: 75px;
   }
 }
 
