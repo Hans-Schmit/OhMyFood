@@ -101,7 +101,7 @@
         @for $i from 1 through 4 {
             &:nth-of-type(#{$i}) {
                 $delay: ($i/5) + s;
-                    animation: menu-slide 0.3s ease-in-out $delay both;
+                    animation: menu-slide 0.4s ease-in-out $delay both;
                 
             }
         }
