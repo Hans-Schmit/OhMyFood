@@ -36,7 +36,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    @include background-color(#FFFFFF);
+    background-color: #FFFFFF;
     text-align: center;
     @include flex-box(row, wrap);
     justify-content: center;
@@ -72,8 +72,8 @@
     @include flex-box();
     justify-content: center;
     align-items: center;
-    @include background-color($normal-grey);
-    @include color($darker-grey);
+    background-color: $normal-grey;
+    color: $darker-grey;
     box-shadow: 0px 5px 15px -10px inset;
     &-icon {
         margin-right: 15px;
@@ -84,7 +84,7 @@
 }
 
 .description{
-    @include background-color($light-grey);
+    background-color: $light-grey;
     @include flex-box(column, nowrap);
     align-items: center;
     text-align: center;
@@ -120,7 +120,7 @@
         border-radius: 15px;
         z-index: 1;
         position: relative;
-        @include background-color($light-grey);
+        background-color: $light-grey;
         @include flex-box(row, nowrap);
         align-items: center;
         @include box-shadow;
@@ -138,7 +138,7 @@
             @include absolute-cover;
             border-radius: 15px;
             z-index: -1;
-            @include background-color(lighten($color: $color-primary, $amount: 35%));
+            background-color: lighten($color: $color-primary, $amount: 35%);
             opacity: 0;
             transition: opacity 0.2s;
         }
@@ -159,12 +159,12 @@
         text-align: center;
         font-size: 13px;
         font-weight: 400;
-        @include background-color($color-primary);
-        @include color(#FFFFFF);
+        background-color: $color-primary;
+        color: #FFFFFF;
         margin-left: -10px;
     }
     &-icon {
-        @include color($dark-grey);
+        color: $dark-grey;
         @include dimensions(20px, 20px);
         font-size: 20px;
         margin: 0px 20px 0px 20px;
@@ -176,7 +176,6 @@
         &::after {
             content: "\f3cd";
             @include absolute-cover;
-            @include color($color-primary);
             @include icon-cover;
         }
     }
@@ -185,7 +184,6 @@
         &::after {
             content: "\f03a";
             @include absolute-cover;
-            @include color($color-primary);
             @include icon-cover;
         }
     }
@@ -194,7 +192,6 @@
         &::after {
             content: "\f54e";
             @include absolute-cover;
-            @include color($color-primary);
             @include icon-cover;
         }
     }
@@ -202,7 +199,7 @@
 }
 
 .restaurant {
-    @include background-color($light-grey);
+    background-color: $light-grey;
     @include flex-box(row, wrap);
     @include dimensions(100%, auto);
     padding: 0% 5% 50px 5%;
@@ -241,7 +238,7 @@
     }
     &-new {
         @include dimensions(80px, 30px);
-        @include background-color($color-tertiary);
+        background-color: $color-tertiary;
         color: darken($color: $color-tertiary, $amount: 38%);
         line-height: 30px;
         text-align: center;

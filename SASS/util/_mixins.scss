@@ -3,14 +3,6 @@
     height: $height;
 }
 
-@mixin background-color($color: transparent) {
-    background-color: $color;
-}
-
-@mixin color($color: black) {
-    color: $color;
-}
-
 @mixin box-shadow ($h-off: 5px, $v-off: 5px, $blur: 30px, $spread: -10px, $color: $dark-grey){
     box-shadow: $h-off $v-off $blur $spread $color;
 }
@@ -31,6 +23,7 @@
 @mixin icon-cover {
     z-index: 2;
     opacity: 0;
+    color: $color-primary;
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;

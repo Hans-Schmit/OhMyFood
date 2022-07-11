@@ -24,7 +24,7 @@
 }
 
 .menu {
-    @include background-color($light-grey);
+    background-color: $light-grey;
     border-radius: 45px 45px 0px 0px;
     padding: 0px 5% 75px 5%;
     margin-bottom: -40px;
@@ -87,7 +87,7 @@
     }
     &-card {
         @include dimensions(100%, 65px);
-        @include background-color(#FFFFFF);
+        background-color: #FFFFFF;
         @include box-shadow;
         @include flex-box(row, nowrap);
         border-radius: 15px;
@@ -105,7 +105,7 @@
     &-iconbox {
         @include dimensions(60px, 100%);
         min-width: 60px;
-        @include background-color($color-tertiary);
+        background-color: $color-tertiary;
         @include flex-box;
         justify-content: center;
         align-items: center;
@@ -116,8 +116,8 @@
     &-icon {
         @include dimensions(20px, 20px);
         font-size: 20px;
-        @include background-color(transparent);
-        @include color(#FFFFFF);
+        background-color: transparent;
+        color: #FFFFFF;
         transform: rotate(-270deg);
         transition: all 0.6s 0.06s;
     }

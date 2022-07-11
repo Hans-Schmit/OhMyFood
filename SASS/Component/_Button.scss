@@ -2,7 +2,7 @@
     @include dimensions(auto, 50px);
     position: relative;
     z-index: 1;
-    @include color(#FFFFFF);
+    color: #FFFFFF;
     background: linear-gradient(to left top, $color-primary, $color-secondary);
     border-style: none;
     border-radius: 25px;
