@@ -395,7 +395,7 @@ input:checked ~ .heart-icon::after {
           align-items: center;
   background-color: #EBEBEB;
   color: #393939;
-  margin-left: -25px;
+  padding-right: 25px;
   -webkit-box-shadow: 0px 5px 15px -10px inset;
           box-shadow: 0px 5px 15px -10px inset;
 }
